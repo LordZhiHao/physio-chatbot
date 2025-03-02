@@ -1,0 +1,6 @@
+sentence-transformers
+langchain-community
+langchain 
+langchain-google-genai 
+python-dotenv 
+twilio
