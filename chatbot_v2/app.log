@@ -1,0 +1,206 @@
+2025-04-04 14:07:53,034 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-04 14:07:53,034 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-04-04 14:07:57,685 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-04-04 14:07:57,687 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-04-04 14:07:57,687 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-04-04 14:07:57,731 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-04 14:07:57,745 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-04-04 14:07:57,748 - trilingual_chatbot - INFO - Vector database created successfully
+2025-04-04 14:19:36,940 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-04 14:19:36,941 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-04-04 14:19:42,297 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-04-04 14:19:42,298 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-04-04 14:19:42,298 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-04-04 14:19:42,345 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-04 14:19:42,363 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-04-04 14:19:42,365 - trilingual_chatbot - INFO - Vector database created successfully
+2025-04-04 14:22:55,922 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-04 14:22:55,923 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-04-04 14:23:00,697 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-04-04 14:23:00,698 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-04-04 14:23:00,698 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-04-04 14:23:00,737 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-04 14:23:00,752 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-04-04 14:23:00,753 - trilingual_chatbot - INFO - Vector database created successfully
+2025-04-04 14:28:54,744 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-04 14:28:54,744 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-04-04 14:28:59,597 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-04-04 14:28:59,597 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-04-04 14:28:59,598 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-04-04 14:28:59,634 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-04 14:28:59,645 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-04-04 14:28:59,647 - trilingual_chatbot - INFO - Vector database created successfully
+2025-04-04 14:34:58,536 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-04 14:34:58,537 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-04-04 14:35:03,627 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-04-04 14:35:03,627 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-04-04 14:35:03,627 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-04-04 14:35:03,694 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-04 14:35:03,717 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-04-04 14:35:03,720 - trilingual_chatbot - INFO - Vector database created successfully
+2025-04-04 14:36:34,924 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-04 14:36:34,924 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-04-04 14:36:39,542 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-04-04 14:36:39,542 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-04-04 14:36:39,542 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-04-04 14:36:39,568 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-04 14:36:39,574 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-04-04 14:36:39,574 - trilingual_chatbot - INFO - Vector database created successfully
+2025-04-04 14:53:07,226 - trilingual_chatbot - INFO - Attempting to load/create vector store (will run only once per session)...
+2025-04-04 14:53:07,229 - trilingual_chatbot - INFO - Split text into 12 chunks.
+2025-04-04 14:53:07,229 - trilingual_chatbot - INFO - Loading embedding model...
+2025-04-04 14:53:23,680 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-04 14:53:23,681 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-04-04 14:53:28,188 - trilingual_chatbot - INFO - Embedding model loaded.
+2025-04-04 14:53:28,188 - trilingual_chatbot - INFO - Creating FAISS index...
+2025-04-04 14:53:28,728 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-04-04 14:53:28,728 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-04-04 14:53:28,728 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-04-04 14:53:28,755 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-04 14:53:28,767 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-04-04 14:53:28,767 - trilingual_chatbot - INFO - FAISS index created.
+2025-04-04 14:53:28,767 - trilingual_chatbot - INFO - Vector store loaded/created successfully in 21.54 seconds.
+2025-04-04 14:53:28,771 - trilingual_chatbot - INFO - Attempting to load LLM (will run only once per session)...
+2025-04-04 14:53:28,802 - trilingual_chatbot - INFO - LLM loaded successfully in 0.03 seconds.
+2025-04-04 14:58:22,549 - __main__ - INFO - App starting, page config set.
+2025-04-04 14:58:30,735 - trilingual_chatbot - INFO - Attempting to load/create vector store (will run only once per session)...
+2025-04-04 14:58:30,735 - trilingual_chatbot - INFO - Split text into 12 chunks.
+2025-04-04 14:58:30,735 - trilingual_chatbot - INFO - Loading embedding model...
+2025-04-04 14:58:42,764 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-04 14:58:42,764 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-04-04 14:58:46,845 - trilingual_chatbot - INFO - Embedding model loaded.
+2025-04-04 14:58:46,854 - trilingual_chatbot - INFO - Creating FAISS index...
+2025-04-04 14:58:47,481 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-04-04 14:58:47,481 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-04-04 14:58:47,481 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-04-04 14:58:47,518 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-04 14:58:47,531 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-04-04 14:58:47,533 - trilingual_chatbot - INFO - FAISS index created.
+2025-04-04 14:58:47,533 - trilingual_chatbot - INFO - Vector store loaded/created successfully in 16.80 seconds.
+2025-04-04 14:58:47,536 - trilingual_chatbot - INFO - Attempting to load LLM (will run only once per session)...
+2025-04-04 14:58:47,572 - trilingual_chatbot - INFO - LLM loaded successfully in 0.04 seconds.
+2025-04-04 14:58:47,577 - __main__ - INFO - Frontend module imported successfully.
+2025-04-04 14:58:47,578 - __main__ - INFO - App execution reached end of main block.
+2025-04-04 14:59:49,338 - __main__ - INFO - App starting, page config set.
+2025-04-04 14:59:49,342 - __main__ - INFO - Frontend module imported successfully.
+2025-04-04 14:59:49,342 - __main__ - INFO - App execution reached end of main block.
+2025-04-04 16:53:04,116 - __main__ - INFO - App starting, page config set.
+2025-04-04 16:53:09,241 - __main__ - ERROR - Error importing frontend: No module named 'distutils'
+Traceback (most recent call last):
+  File "C:\Users\Jason\Desktop\physio-chatbot\chatbot_v2\app.py", line 36, in <module>
+    import frontend
+  File "C:\Users\Jason\Desktop\physio-chatbot\chatbot_v2\frontend.py", line 5, in <module>
+    from trilingual_chatbot import get_response, clear_memories, get_current_language
+  File "C:\Users\Jason\Desktop\physio-chatbot\chatbot_v2\trilingual_chatbot.py", line 331, in <module>
+    from langchain_google_genai import ChatGoogleGenerativeAI
+  File "C:\Users\Jason\Desktop\physio-chatbot\mynewev\Lib\site-packages\langchain_google_genai\__init__.py", line 58, in <module>
+    from langchain_google_genai._enums import HarmBlockThreshold, HarmCategory, Modality
+  File "C:\Users\Jason\Desktop\physio-chatbot\mynewev\Lib\site-packages\langchain_google_genai\_enums.py", line 1, in <module>
+    import google.ai.generativelanguage_v1beta as genai
+  File "C:\Users\Jason\Desktop\physio-chatbot\mynewev\Lib\site-packages\google\ai\generativelanguage_v1beta\__init__.py", line 28, in <module>
+    from .services.model_service import ModelServiceAsyncClient, ModelServiceClient
+  File "C:\Users\Jason\Desktop\physio-chatbot\mynewev\Lib\site-packages\google\ai\generativelanguage_v1beta\services\model_service\__init__.py", line 16, in <module>
+    from .async_client import ModelServiceAsyncClient
+  File "C:\Users\Jason\Desktop\physio-chatbot\mynewev\Lib\site-packages\google\ai\generativelanguage_v1beta\services\model_service\async_client.py", line 57, in <module>
+    from .client import ModelServiceClient
+  File "C:\Users\Jason\Desktop\physio-chatbot\mynewev\Lib\site-packages\google\ai\generativelanguage_v1beta\services\model_service\client.py", line 74, in <module>
+    from .transports.base import DEFAULT_CLIENT_INFO, ModelServiceTransport
+  File "C:\Users\Jason\Desktop\physio-chatbot\mynewev\Lib\site-packages\google\ai\generativelanguage_v1beta\services\model_service\transports\__init__.py", line 19, in <module>
+    from .base import ModelServiceTransport
+  File "C:\Users\Jason\Desktop\physio-chatbot\mynewev\Lib\site-packages\google\ai\generativelanguage_v1beta\services\model_service\transports\base.py", line 21, in <module>
+    from google.api_core import gapic_v1, operations_v1
+  File "C:\Users\Jason\Desktop\physio-chatbot\mynewev\Lib\site-packages\google\api_core\operations_v1\__init__.py", line 17, in <module>
+    from google.api_core.operations_v1.abstract_operations_client import AbstractOperationsClient
+  File "C:\Users\Jason\Desktop\physio-chatbot\mynewev\Lib\site-packages\google\api_core\operations_v1\abstract_operations_client.py", line 17, in <module>
+    from distutils import util
+ModuleNotFoundError: No module named 'distutils'
+2025-04-04 16:57:06,716 - __main__ - INFO - App starting, page config set.
+2025-04-04 16:57:11,356 - trilingual_chatbot - INFO - Attempting to load/create vector store (will run only once per session)...
+2025-04-04 16:57:11,356 - trilingual_chatbot - INFO - Split text into 12 chunks.
+2025-04-04 16:57:11,356 - trilingual_chatbot - INFO - Loading embedding model...
+2025-04-04 16:57:56,413 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-04-04 16:58:03,575 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-04 16:58:03,585 - trilingual_chatbot - INFO - Embedding model loaded.
+2025-04-04 16:58:03,586 - trilingual_chatbot - INFO - Creating FAISS index...
+2025-04-04 16:58:06,856 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-04-04 16:58:06,856 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-04-04 16:58:06,856 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-04-04 16:58:08,248 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-04 16:58:08,283 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-04-04 16:58:08,286 - trilingual_chatbot - INFO - FAISS index created.
+2025-04-04 16:58:08,287 - trilingual_chatbot - INFO - Vector store loaded/created successfully in 56.93 seconds.
+2025-04-04 16:58:08,299 - trilingual_chatbot - INFO - Attempting to load LLM (will run only once per session)...
+2025-04-04 16:58:08,521 - trilingual_chatbot - INFO - LLM loaded successfully in 0.22 seconds.
+2025-04-04 16:58:08,546 - __main__ - INFO - Frontend module imported successfully.
+2025-04-04 16:58:08,547 - __main__ - INFO - App execution reached end of main block.
+2025-04-04 16:58:18,182 - __main__ - INFO - App starting, page config set.
+2025-04-04 16:58:18,186 - __main__ - INFO - Frontend module imported successfully.
+2025-04-04 16:58:18,186 - __main__ - INFO - App execution reached end of main block.
+2025-04-04 17:02:40,026 - __main__ - INFO - App starting, page config set.
+2025-04-04 17:02:42,671 - trilingual_chatbot - INFO - Attempting to load/create vector store (will run only once per session)...
+2025-04-04 17:02:42,671 - trilingual_chatbot - INFO - Split text into 12 chunks.
+2025-04-04 17:02:42,671 - trilingual_chatbot - INFO - Loading embedding model...
+2025-04-04 17:02:50,916 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-04-04 17:02:55,909 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-04-04 17:02:55,913 - trilingual_chatbot - INFO - Embedding model loaded.
+2025-04-04 17:02:55,913 - trilingual_chatbot - INFO - Creating FAISS index...
+2025-04-04 17:02:58,280 - faiss.loader - INFO - Loading faiss with AVX512 support.
+2025-04-04 17:02:58,280 - faiss.loader - INFO - Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-04-04 17:02:58,286 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-04-04 17:02:58,688 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-04-04 17:02:58,716 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes.
+2025-04-04 17:02:58,720 - trilingual_chatbot - INFO - FAISS index created.
+2025-04-04 17:02:58,720 - trilingual_chatbot - INFO - Vector store loaded/created successfully in 16.05 seconds.
+2025-04-04 17:02:58,726 - trilingual_chatbot - INFO - Attempting to load LLM (will run only once per session)...
+2025-04-04 17:02:58,796 - trilingual_chatbot - INFO - LLM loaded successfully in 0.07 seconds.
+2025-04-04 17:02:58,818 - __main__ - INFO - Frontend module imported successfully.
+2025-04-04 17:02:58,820 - __main__ - INFO - App execution reached end of main block.
+2025-04-04 17:03:51,186 - __main__ - INFO - App starting, page config set.
+2025-04-04 17:03:51,186 - __main__ - INFO - Frontend module imported successfully.
+2025-04-04 17:03:51,186 - __main__ - INFO - App execution reached end of main block.
+2025-04-04 17:06:22,486 - __main__ - INFO - App starting, page config set.
+2025-04-04 17:06:22,526 - frontend - INFO - --- MINIMAL frontend.py executing ---
+2025-04-04 17:06:22,896 - frontend - INFO - Initialized session state messages.
+2025-04-04 17:06:22,897 - frontend - INFO - Displaying 1 messages.
+2025-04-04 17:06:22,900 - frontend - INFO - Checking for chat input...
+2025-04-04 17:06:22,901 - frontend - INFO - No chat input detected this run.
+2025-04-04 17:06:22,901 - frontend - INFO - --- MINIMAL frontend.py finished execution for this run ---
+2025-04-04 17:06:22,901 - __main__ - INFO - Frontend module imported successfully.
+2025-04-04 17:06:22,902 - __main__ - INFO - App execution reached end of main block.
+2025-04-04 17:06:32,529 - __main__ - INFO - App starting, page config set.
+2025-04-04 17:06:32,529 - __main__ - INFO - Frontend module imported successfully.
+2025-04-04 17:06:32,529 - __main__ - INFO - App execution reached end of main block.
+2025-04-04 17:07:24,139 - __main__ - INFO - Minimal App starting, page config set.
+2025-04-04 17:07:24,142 - frontend - INFO - --- MINIMAL frontend.py executing ---
+2025-04-04 17:07:24,387 - frontend - INFO - Initialized session state messages.
+2025-04-04 17:07:24,388 - frontend - INFO - Displaying 1 messages.
+2025-04-04 17:07:24,391 - frontend - INFO - Checking for chat input...
+2025-04-04 17:07:24,393 - frontend - INFO - No chat input detected this run.
+2025-04-04 17:07:24,393 - frontend - INFO - --- MINIMAL frontend.py finished execution for this run ---
+2025-04-04 17:07:24,393 - __main__ - INFO - Minimal Frontend module imported successfully.
+2025-04-04 17:07:24,394 - __main__ - INFO - Minimal App execution reached end of main block.
+2025-04-04 17:07:25,333 - __main__ - INFO - Minimal App starting, page config set.
+2025-04-04 17:07:25,333 - __main__ - INFO - Minimal Frontend module imported successfully.
+2025-04-04 17:07:25,333 - __main__ - INFO - Minimal App execution reached end of main block.
+2025-04-04 17:08:12,512 - __main__ - INFO - Minimal App starting, page config set.
+2025-04-04 17:08:12,516 - frontend - INFO - --- MINIMAL frontend.py executing ---
+2025-04-04 17:08:12,696 - frontend - INFO - Initialized session state messages.
+2025-04-04 17:08:12,696 - frontend - INFO - Displaying 1 messages.
+2025-04-04 17:08:12,696 - frontend - INFO - Checking for chat input...
+2025-04-04 17:08:12,696 - frontend - INFO - No chat input detected this run.
+2025-04-04 17:08:12,696 - frontend - INFO - --- MINIMAL frontend.py finished execution for this run ---
+2025-04-04 17:08:12,696 - __main__ - INFO - Minimal Frontend module imported successfully.
+2025-04-04 17:08:12,696 - __main__ - INFO - Minimal App execution reached end of main block.
+2025-04-04 17:08:15,286 - __main__ - INFO - Minimal App starting, page config set.
+2025-04-04 17:08:15,286 - __main__ - INFO - Minimal Frontend module imported successfully.
+2025-04-04 17:08:15,292 - __main__ - INFO - Minimal App execution reached end of main block.
