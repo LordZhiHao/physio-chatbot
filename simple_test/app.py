@@ -85,5 +85,4 @@ except Exception as e:
 
 if __name__ == "__main__":
     logger.info("Minimal App execution reached end of main block.")
-    pass
 # --- END OF FILE app.py ---

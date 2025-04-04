@@ -92,7 +92,7 @@ def send_message():
         # Add assistant response to chat history
         st.session_state.messages.append({"role": "assistant", "content": response})
         
-        st.rerun()
+        # st.rerun()
 
 # Function to display chat message
 def display_message(role, content):
@@ -138,7 +138,7 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # Hidden button for clear chat functionality
-st.button("Clear", key="clear_chat", on_click=clear_chat, style="display: none;")
+st.button("Clear", key="clear_chat", on_click=clear_chat)
 
 # Display chat container
 chat_container = st.container()
