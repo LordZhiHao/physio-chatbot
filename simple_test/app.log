@@ -7,3 +7,6 @@
 2025-04-04 17:34:31,520 - frontend - INFO - --- MINIMAL frontend.py finished execution for this run ---
 2025-04-04 17:34:31,520 - __main__ - INFO - Minimal Frontend module imported successfully.
 2025-04-04 17:34:31,521 - __main__ - INFO - Minimal App execution reached end of main block.
+2025-04-04 17:34:36,072 - __main__ - INFO - Minimal App starting, page config set.
+2025-04-04 17:34:36,072 - __main__ - INFO - Minimal Frontend module imported successfully.
+2025-04-04 17:34:36,072 - __main__ - INFO - Minimal App execution reached end of main block.
