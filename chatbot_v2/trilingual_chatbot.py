@@ -104,24 +104,29 @@ def load_llm():
 vectorstore = load_vector_store() # Now calls the loading function
 llm = load_llm()
 
-# --- Language Detection (remains the same) ---
+# --- Language Detection (Modified for Debugging) ---
 def detect_language(text):
     if not text or text.strip() == "":
         logger.warning("Empty text provided for language detection")
         return 'english'
     try:
         lang = detect(text)
-        if lang in ['zh-cn', 'zh-tw', 'zh']:
-            logger.info(f"Detected Chinese language: {lang}")
+        # --- ADD THIS LINE ---
+        logger.info(f"Raw detected language code from langdetect: '{lang}' for text: '{text[:50]}...'") # Log the code and start of text
+        # --------------------
+
+        if lang in ['zh-cn', 'zh-tw', 'zh', 'zh-hk', 'zh-sg', 'ko', 'fr', 'ja']:
+            logger.info(f"Detected Chinese language (mapped): {lang}") # Keep this log too
             return 'chinese'
         elif lang in ['ms', 'id']:
-            logger.info(f"Detected Malay language: {lang}")
+            logger.info(f"Detected Malay language (mapped): {lang}")
             return 'malay'
         else:
-            logger.info(f"Detected language defaulting to English: {lang}")
+            # Modify this log to show the code it's defaulting from
+            logger.info(f"Detected language '{lang}', defaulting to English.")
             return 'english'
     except LangDetectException as e:
-        logger.warning(f"Language detection failed: {e}. Defaulting to English.")
+        logger.warning(f"Language detection failed with exception: {e}. Defaulting to English.")
         return 'english'
 
 
