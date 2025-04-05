@@ -595,127 +595,127 @@ memories = {
 }
 current_language = 'english' # This might also need session_state if you want language to persist
 
-# # --- get_response Function (Add more logging and ensure it uses cached llm/vectorstore) ---
-# def get_response(query):
-#     global current_language # Consider managing this via session_state too
-#     global vectorstore # Access cached vectorstore
-#     global llm # Access cached llm
-#     global memories # Access module-level memory (see note above)
+# --- get_response Function (Add more logging and ensure it uses cached llm/vectorstore) ---
+def get_response(query):
+    global current_language # Consider managing this via session_state too
+    global vectorstore # Access cached vectorstore
+    global llm # Access cached llm
+    global memories # Access module-level memory (see note above)
 
-#     logger.info(f"--- Starting get_response for query: '{query}' ---")
+    logger.info(f"--- Starting get_response for query: '{query}' ---")
 
-#     if not query or query.strip() == "":
-#         logger.warning("Empty query received in get_response")
-#         return "Please ask a question so I can assist you."
+    if not query or query.strip() == "":
+        logger.warning("Empty query received in get_response")
+        return "Please ask a question so I can assist you."
 
-#     # Ensure resources are loaded (should be cached, but check)
-#     if not vectorstore or not llm:
-#         logger.error("FATAL: Vectorstore or LLM not available in get_response!")
-#         st.error("Core components (AI model or knowledge base) are not loaded. Cannot respond.")
-#         return "I'm sorry, I cannot process your request right now due to an internal setup issue."
+    # Ensure resources are loaded (should be cached, but check)
+    if not vectorstore or not llm:
+        logger.error("FATAL: Vectorstore or LLM not available in get_response!")
+        st.error("Core components (AI model or knowledge base) are not loaded. Cannot respond.")
+        return "I'm sorry, I cannot process your request right now due to an internal setup issue."
 
-#     try:
-#         # 1. Detect language
-#         logger.info("Detecting language...")
-#         detected_language = detect_language(query)
-#         current_language = detected_language # Update global state (or better: session state)
-#         logger.info(f"Language detected: {current_language}")
+    try:
+        # 1. Detect language
+        logger.info("Detecting language...")
+        detected_language = detect_language(query)
+        current_language = detected_language # Update global state (or better: session state)
+        logger.info(f"Language detected: {current_language}")
 
-#         today = datetime.now().strftime("%A, %d %B %Y")
+        today = datetime.now().strftime("%A, %d %B %Y")
 
-#         # 2. Retrieve context
-#         logger.info("Searching vector store...")
-#         start_search_time = time.time()
-#         docs = vectorstore.similarity_search(query, k=4)
-#         context = "\n\n".join([doc.page_content for doc in docs])
-#         end_search_time = time.time()
-#         logger.info(f"Vector store search completed in {end_search_time - start_search_time:.2f} seconds.")
+        # 2. Retrieve context
+        logger.info("Searching vector store...")
+        start_search_time = time.time()
+        docs = vectorstore.similarity_search(query, k=4)
+        context = "\n\n".join([doc.page_content for doc in docs])
+        end_search_time = time.time()
+        logger.info(f"Vector store search completed in {end_search_time - start_search_time:.2f} seconds.")
 
-#         # 3. Format chat history (using the volatile module-level memory)
-#         logger.info("Formatting chat history from module memory...")
-#         chat_history = ""
-#         # Use try-except block for safety in case memory object is problematic
-#         try:
-#              messages = memories[current_language].chat_memory.messages
-#              for message in messages:
-#                   if message.type == "human":
-#                       chat_history += f"User: {message.content}\n"
-#                   else:
-#                       chat_history += f"Assistant: {message.content}\n"
-#              logger.info("Chat history formatted.")
-#         except Exception as mem_e:
-#              logger.error(f"Error formatting chat history: {mem_e}", exc_info=True)
-#              chat_history = "Error retrieving chat history." # Provide fallback
+        # 3. Format chat history (using the volatile module-level memory)
+        logger.info("Formatting chat history from module memory...")
+        chat_history = ""
+        # Use try-except block for safety in case memory object is problematic
+        try:
+             messages = memories[current_language].chat_memory.messages
+             for message in messages:
+                  if message.type == "human":
+                      chat_history += f"User: {message.content}\n"
+                  else:
+                      chat_history += f"Assistant: {message.content}\n"
+             logger.info("Chat history formatted.")
+        except Exception as mem_e:
+             logger.error(f"Error formatting chat history: {mem_e}", exc_info=True)
+             chat_history = "Error retrieving chat history." # Provide fallback
 
-#         # 4. Prepare and run LLM Chain
-#         prompt = prompts[current_language]
-#         logger.info("Creating LLM chain...")
-#         llm_chain = LLMChain(llm=llm, prompt=prompt) # Use cached llm
-#         logger.info("Running LLM chain...")
-#         start_llm_time = time.time()
-#         response = llm_chain.run(
-#             chat_history=chat_history,
-#             date=today,
-#             context=context,
-#             question=query
-#         )
-#         end_llm_time = time.time()
-#         logger.info(f"LLM chain execution finished in {end_llm_time - start_llm_time:.2f} seconds.")
+        # 4. Prepare and run LLM Chain
+        prompt = prompts[current_language]
+        logger.info("Creating LLM chain...")
+        llm_chain = LLMChain(llm=llm, prompt=prompt) # Use cached llm
+        logger.info("Running LLM chain...")
+        start_llm_time = time.time()
+        response = llm_chain.run(
+            chat_history=chat_history,
+            date=today,
+            context=context,
+            question=query
+        )
+        end_llm_time = time.time()
+        logger.info(f"LLM chain execution finished in {end_llm_time - start_llm_time:.2f} seconds.")
 
-#         # 5. Update memory (module-level again)
-#         try:
-#             logger.info("Updating module memory...")
-#             memories[current_language].chat_memory.add_user_message(query)
-#             memories[current_language].chat_memory.add_ai_message(response)
-#             logger.info("Module memory updated.")
-#         except Exception as mem_e:
-#             logger.error(f"Error updating memory: {mem_e}", exc_info=True)
-
-
-#         logger.info(f"--- Successfully generated response in {current_language} ---")
-#         return response
-
-#     except Exception as e:
-#         # Log the full error traceback
-#         logger.error(f"!!! UNEXPECTED ERROR IN get_response !!!: {e}", exc_info=True)
-#         st.error("An unexpected error occurred while processing your request.") # Show error in UI
-#         return f"I'm truly sorry, but I encountered an unexpected technical difficulty. Please try asking again in a moment."
-
-# # --- Functions to clear memory and get language (remain the same for now) ---
-# def clear_memories():
-#     """Clear conversation memory for all languages"""
-#     global memories # Access module-level memory
-#     try:
-#         for lang in memories:
-#             memories[lang].clear()
-#         logger.info("All module-level conversation memories cleared")
-#     except Exception as e:
-#         logger.error(f"Error clearing memories: {e}", exc_info=True)
+        # 5. Update memory (module-level again)
+        try:
+            logger.info("Updating module memory...")
+            memories[current_language].chat_memory.add_user_message(query)
+            memories[current_language].chat_memory.add_ai_message(response)
+            logger.info("Module memory updated.")
+        except Exception as mem_e:
+            logger.error(f"Error updating memory: {mem_e}", exc_info=True)
 
 
-# def get_current_language():
-#     """Return the current language being used"""
-#     global current_language
-#     return current_language
+        logger.info(f"--- Successfully generated response in {current_language} ---")
+        return response
+
+    except Exception as e:
+        # Log the full error traceback
+        logger.error(f"!!! UNEXPECTED ERROR IN get_response !!!: {e}", exc_info=True)
+        st.error("An unexpected error occurred while processing your request.") # Show error in UI
+        return f"I'm truly sorry, but I encountered an unexpected technical difficulty. Please try asking again in a moment."
+
+# --- Functions to clear memory and get language (remain the same for now) ---
+def clear_memories():
+    """Clear conversation memory for all languages"""
+    global memories # Access module-level memory
+    try:
+        for lang in memories:
+            memories[lang].clear()
+        logger.info("All module-level conversation memories cleared")
+    except Exception as e:
+        logger.error(f"Error clearing memories: {e}", exc_info=True)
+
+
+def get_current_language():
+    """Return the current language being used"""
+    global current_language
+    return current_language
 
 # --- DUMMY get_response ---
-def get_response(query):
-    logger.info(f"--- DEBUG: DUMMY get_response received query: '{query}' ---")
-    # !! DO NOT call vectorstore, llm, detect_language, memory !!
-    time.sleep(0.5) # Simulate tiny delay
-    response = f"DEBUG: Dummy response for query: '{query}'"
-    logger.info(f"--- DEBUG: DUMMY get_response returning: '{response}' ---")
-    return response
+# def get_response(query):
+#     logger.info(f"--- DEBUG: DUMMY get_response received query: '{query}' ---")
+#     # !! DO NOT call vectorstore, llm, detect_language, memory !!
+#     time.sleep(0.5) # Simulate tiny delay
+#     response = f"DEBUG: Dummy response for query: '{query}'"
+#     logger.info(f"--- DEBUG: DUMMY get_response returning: '{response}' ---")
+#     return response
 
-# --- DUMMY clear_memories (if called by frontend) ---
-def clear_memories():
-    logger.info("--- DEBUG: DUMMY clear_memories called ---")
-    pass
+# # --- DUMMY clear_memories (if called by frontend) ---
+# def clear_memories():
+#     logger.info("--- DEBUG: DUMMY clear_memories called ---")
+#     pass
 
-# --- DUMMY get_current_language (if called by frontend) ---
-def get_current_language():
-    logger.info("--- DEBUG: DUMMY get_current_language called ---")
-    return "english" # Or any fixed value
+# # --- DUMMY get_current_language (if called by frontend) ---
+# def get_current_language():
+#     logger.info("--- DEBUG: DUMMY get_current_language called ---")
+#     return "english" # Or any fixed value
 
 # --- Local Test Block (remains the same) ---
 if __name__ == "__main__":

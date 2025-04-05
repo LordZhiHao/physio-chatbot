@@ -62,28 +62,28 @@
 # # --- END OF FILE app.py ---
 
 # --- START OF FILE app.py (No changes needed if just replacing frontend.py) ---
-import streamlit as st
-import os
-import logging
-from dotenv import load_dotenv
+# import streamlit as st
+# import os
+# import logging
+# from dotenv import load_dotenv
 
-st.set_page_config(page_title="Minimal Test", page_icon="🧪", layout="centered") # Updated title
+# st.set_page_config(page_title="Minimal Test", page_icon="🧪", layout="centered") # Updated title
 
-load_dotenv()
-logging.basicConfig(level=os.getenv("LOG_LEVEL", "INFO"), format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler("app.log"), logging.StreamHandler()])
-logger = logging.getLogger(__name__)
-logger.info("Minimal App starting, page config set.")
+# load_dotenv()
+# logging.basicConfig(level=os.getenv("LOG_LEVEL", "INFO"), format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler("app.log"), logging.StreamHandler()])
+# logger = logging.getLogger(__name__)
+# logger.info("Minimal App starting, page config set.")
 
-try:
-    # This will now import the MINIMAL frontend.py you just saved
-    import frontend
-    logger.info("Minimal Frontend module imported successfully.")
-except Exception as e:
-    logger.error(f"Error importing MINIMAL frontend: {e}", exc_info=True)
-    st.error(f"Fatal error during minimal application setup: {e}")
-    st.stop()
+# try:
+#     # This will now import the MINIMAL frontend.py you just saved
+#     import frontend
+#     logger.info("Minimal Frontend module imported successfully.")
+# except Exception as e:
+#     logger.error(f"Error importing MINIMAL frontend: {e}", exc_info=True)
+#     st.error(f"Fatal error during minimal application setup: {e}")
+#     st.stop()
 
-if __name__ == "__main__":
-    logger.info("Minimal App execution reached end of main block.")
-    pass
+# if __name__ == "__main__":
+#     logger.info("Minimal App execution reached end of main block.")
+#     pass
 # --- END OF FILE app.py ---

@@ -182,7 +182,7 @@ prompts = {
 }
 
 # Set up the LLM
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.3, api_key=os.getenv("GOOGLE_API_KEY"))
+llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.3, api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Set up memory - we'll use separate memories for each language
 memories = {

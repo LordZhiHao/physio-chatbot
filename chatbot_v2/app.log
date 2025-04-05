@@ -204,3 +204,26 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
 2025-04-04 17:08:15,286 - __main__ - INFO - Minimal App starting, page config set.
 2025-04-04 17:08:15,286 - __main__ - INFO - Minimal Frontend module imported successfully.
 2025-04-04 17:08:15,292 - __main__ - INFO - Minimal App execution reached end of main block.
+2025-04-05 10:25:20,192 - __main__ - INFO - Minimal App starting, page config set.
+2025-04-05 10:25:20,194 - frontend - INFO - --- MINIMAL frontend.py executing ---
+2025-04-05 10:25:20,389 - frontend - INFO - Initialized session state messages.
+2025-04-05 10:25:20,389 - frontend - INFO - Displaying 1 messages.
+2025-04-05 10:25:20,391 - frontend - INFO - Checking for chat input...
+2025-04-05 10:25:20,392 - frontend - INFO - No chat input detected this run.
+2025-04-05 10:25:20,392 - frontend - INFO - --- MINIMAL frontend.py finished execution for this run ---
+2025-04-05 10:25:20,392 - __main__ - INFO - Minimal Frontend module imported successfully.
+2025-04-05 10:25:20,393 - __main__ - INFO - Minimal App execution reached end of main block.
+2025-04-05 10:25:23,648 - __main__ - INFO - Minimal App starting, page config set.
+2025-04-05 10:25:23,649 - __main__ - INFO - Minimal Frontend module imported successfully.
+2025-04-05 10:25:23,649 - __main__ - INFO - Minimal App execution reached end of main block.
+2025-04-05 10:25:57,592 - __main__ - INFO - Minimal App starting, page config set.
+2025-04-05 10:25:57,593 - frontend - INFO - --- MINIMAL frontend.py executing ---
+2025-04-05 10:25:57,626 - __main__ - INFO - Minimal App starting, page config set.
+2025-04-05 10:25:57,742 - frontend - INFO - Initialized session state messages.
+2025-04-05 10:25:57,743 - frontend - INFO - Displaying 1 messages.
+2025-04-05 10:25:57,744 - frontend - INFO - Checking for chat input...
+2025-04-05 10:25:57,745 - frontend - INFO - No chat input detected this run.
+2025-04-05 10:25:57,745 - frontend - INFO - --- MINIMAL frontend.py finished execution for this run ---
+2025-04-05 10:25:57,746 - __main__ - INFO - Minimal Frontend module imported successfully.
+2025-04-05 10:25:57,746 - __main__ - INFO - Minimal Frontend module imported successfully.
+2025-04-05 10:27:04,544 - __main__ - INFO - Minimal App starting, page config set.
